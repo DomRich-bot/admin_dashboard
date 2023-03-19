@@ -94,6 +94,15 @@ input {
 .buttons>button {
     margin: 19px;
 }
+.interact>button {
+    background-color: darkolivegreen;
+    border: solid darkolivegreen;
+}
+
+button>img {
+    height: 20px;
+    width: 20px;
+}
 
 .notification {
     grid-area: 1/3/2/4;
@@ -106,11 +115,23 @@ input {
 .main-content {
     background-color: lightsteelblue;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1.5fr;
     grid-template-rows: .25fr 1fr 1fr 1fr;
     gap: 19px;
     padding: 19px;
     padding-bottom: 50px;
+}
+
+.main-content>h2 {
+    justify-self: start;
+    align-self: end;
+    margin-bottom: -5px;
+}
+
+.side-content>h2 {
+    justify-self: start;
+    align-self: end;
+    margin-bottom: -5px;
 }
 
 .trend {
@@ -130,5 +151,33 @@ input {
 }
 
 .card {
-    background-color: #fff;
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sep {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trending>img {
+    height: 40px;
+    width: 40px;
+    justify-self: end;
+}
+
+.interact {
+    display: flex;
+    justify-content: flex-end;
 }
