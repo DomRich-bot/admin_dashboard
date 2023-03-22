@@ -13,8 +13,8 @@ body {
 }
 .nav>img {
     justify-self: center;
-    height: 30px;  
-    width: 30px; 
+    height: 33px;  
+    width: 33px; 
     filter:invert(100%) sepia(3%) saturate(0%) hue-rotate(329deg) brightness(106%) contrast(107%); 
 }
 
@@ -27,8 +27,8 @@ body {
     padding-left: 30px;
     place-items: start;
     color: white;
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: bold;
+    font-size: 26px;
 }
 
 .dash {
@@ -69,7 +69,6 @@ p.settings {
     display: grid;
     grid-template-rows: .75fr 1fr;
     padding-right: 20px;
-    box-shadow: ;
 }
 
 .header-top {
@@ -130,8 +129,8 @@ input {
 }
 
 .noti {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 
 .buttons {
@@ -175,11 +174,12 @@ button>img {
 .main-content {
     background-color: rgb(228, 235, 241);
     display: grid;
-    grid-template-columns: 2fr 2fr 1.5fr;
+    grid-template-columns: 2fr 2fr 1.2fr;
     grid-template-rows: .1fr 1fr 1fr 1fr;
-    gap: 25px;
-    padding: 25px;
-    padding-bottom: 50px;
+    gap: 30px;
+    padding: 30px;
+    padding-bottom: 60px;
+    box-shadow: inset 0px 1px 10px 0px rgb(179, 179, 179);
 }
 
 .main-content>h2 {
@@ -217,8 +217,15 @@ button>img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 25px;
+    font-size: 20px;
     border-radius: 8px;
+    color: rgb(75, 75, 75);
+    box-shadow: 0px 10px 10px -10px #464646;
+}
+
+.card-main>h4, .card-main>p, .announcements>h4, .announcements>p  {
+    margin: 5px;
 }
 
 .main-content>.card {
@@ -228,6 +235,21 @@ button>img {
 .sep {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.announcements {
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+}
+
+h4 {
+    color: black;
 }
 
 .trending {
@@ -238,11 +260,12 @@ button>img {
     gap: 10px;
 }
 
-.tag>p{
-    margin: 5px;
+.tag>:nth-child(1){
+    color: black;
 }
-.tag:nth-child(2) {
-    font-size: 18px;
+.tag>p {
+    margin: 0;
+    font-size: 17px;
 }
 
 .trending>img {
