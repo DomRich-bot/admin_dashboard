@@ -1,7 +1,14 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(fonts/comfortaa-variablefont_wght-webfont.woff) format("woff");
+    src: url(fonts/comfortaa-variablefont_wght-webfont.woff2) format("woff2");
+}
+
 body {
     display: inline-block;
     margin: 0;
     height: 100vh;
+    font-family: "comfortaa";
 }
 
 .layout {
@@ -56,6 +63,11 @@ body {
     gap: 7px;
 }
 
+.nav> *:hover {
+    text-shadow: 0 0 6px white;
+    cursor: default;
+}
+
 .settings {
     align-self: flex-end;
     margin-bottom: 5px;
@@ -98,6 +110,14 @@ input {
     height: 33px;
     border: none;
     border-radius: 20px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid rgb(42, 133, 236);
+    box-shadow: 2px 2px 4px grey;
+    outline: none;
+    padding-left: 12px;
+    font-size: 15px;
 }
 
 .header-bottom {
@@ -145,19 +165,43 @@ input {
     font-weight: bold;
     color: white;
     background-color: rgb(42, 133, 236);
+    border: 5px solid rgb(42, 133, 236);
     border: none;
     border-radius: 40px;
     width: 125px;
+    height: 60px;
+    cursor: pointer;
 }
+
 .interact>button {
     background-color: white;
     border: none;
+    cursor: pointer;
+}
+
+.interact>button:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.interact>button:active {
+    transform: scaleY(.95);
 }
 
 button>img {
     height: 28px;
     width: 28px;
     opacity: 85%;
+}
+
+.buttons>button:hover {
+    background-color: white;
+    border: 3px solid rgb(42, 133, 236);
+    color: rgb(42, 133, 236);
+}
+
+.buttons>button:active {
+    transform: scaleY(.95);
 }
 
 .notification {
@@ -264,8 +308,10 @@ h4 {
     color: black;
 }
 .tag>p {
-    margin: 0;
-    font-size: 17px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 0px;
+    font-size: 16px;
 }
 
 .trending>img {
